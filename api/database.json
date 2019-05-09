@@ -12,18 +12,18 @@
     },
     {
       "id": 3,
-      "username": "naguirre2",
-      "email": "ehackworth2@pen.io"
+      "username": "mfrail0",
+      "email": "new"
     },
     {
       "id": 4,
-      "username": "tberk3",
-      "email": "gkilty3@meetup.com"
+      "username": "epitone1",
+      "email": "csimony1@sciencedaily.com"
     },
     {
       "id": 5,
-      "username": "chastilow4",
-      "email": "mbiggar4@skype.com"
+      "username": "naguirre2",
+      "email": "ehackworth2@pen.io"
     }
   ],
   "friends": [
@@ -34,7 +34,7 @@
     },
     {
       "id": 2,
-      "user_id": 2,
+      "user_id": 3,
       "friend_id": 4
     },
     {
@@ -55,7 +55,7 @@
     {
       "id": 6,
       "user_id": 2,
-      "friend_id": 5
+      "friend_id": 1
     }
   ],
   "messages": [
