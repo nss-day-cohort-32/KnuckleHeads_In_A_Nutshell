@@ -24,38 +24,12 @@
       "id": 5,
       "username": "naguirre2",
       "email": "ehackworth2@pen.io"
-    }
-  ],
-  "friends": [
-    {
-      "id": 1,
-      "user_id": 4,
-      "friend_id": 2
     },
     {
-      "id": 2,
-      "user_id": 3,
-      "friend_id": 4
-    },
-    {
-      "id": 3,
-      "user_id": 3,
-      "friend_id": 1
-    },
-    {
-      "id": 4,
-      "user_id": 1,
-      "friend_id": 3
-    },
-    {
-      "id": 5,
-      "user_id": 5,
-      "friend_id": 2
-    },
-    {
-      "id": 6,
-      "user_id": 2,
-      "friend_id": 1
+      "username": "jake",
+      "email": "jake",
+      "password": "jake",
+      "id": 6
     }
   ],
   "messages": [
