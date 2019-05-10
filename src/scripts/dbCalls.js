@@ -8,7 +8,10 @@ const API = {
     },
     deleteCall: (resource, id) => {
         return fetch(`${src}/${resource}/${id}`, {
-            method: "DELETE"
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
         })
     },
     postCall: (resource, data) => {
