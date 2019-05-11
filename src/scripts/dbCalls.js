@@ -38,23 +38,3 @@ const API = {
 
 export default API
 
-
-    // reloadPublic: (resource, f) => {
-    //     this.getCall(`${resource}`)
-    //         .then(parsedResult => {
-    //             console.log(parsedResult)
-    //             // parsedResult.map(f)
-    //         })
-    // }
-
-// function loadChickenData() {
-//     // get chicken data from API
-//     API.getChickens().then(parsedChickens => {
-//       // clear output div
-//       outputDiv.innerHTML = "";
-//       parsedChickens.forEach(parsedChicken => {
-//         // add chickens to DOM
-//         buildChickenDOM(parsedChicken);
-//       });
-//     });
-//   }

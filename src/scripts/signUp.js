@@ -11,9 +11,23 @@ function createUser() {
         password: `${password}`
     }
 
-    // API.postCall("users", userObj)
+    API.getCall("users")
+        .then(users => {
+            console.log(users)
+            if (users.every(checkUniqueUser) === false) {
+                alert("Username already in use try another username")
+            } else {
+                console.log(userObj)
+                API.postCall("users", userObj)
+            }
+        })
 
+    function checkUniqueUser(user) {
+        const testName = user.username.trim().toLowerCase();
+        const uniqueName = name.trim().toLowerCase();
+        return (testName !== uniqueName)
 
+    }
 }
 
 export default createUser

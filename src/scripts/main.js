@@ -37,19 +37,6 @@ document.querySelector("#btn_open_signin_2").addEventListener("click", event => 
     document.getElementById("overlay_signin").style.display = "block"
 })
 
-API.getCall("users")
-    .then(users => {
-        console.log(users)
-        users.map(checkUniqueUser)
-    })
-function checkUniqueUser(user, username) {
-    console.log("user", user)
-    if (user.username === username) {
-        alert("KnuckleHead already exsist try a new username")
-    } else {
-
-    }
-}
 
 
 
