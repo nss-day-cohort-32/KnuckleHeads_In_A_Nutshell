@@ -29,8 +29,9 @@ document.querySelector("#btn_open_signin_1").addEventListener("click", event => 
 
 })
 
-document.querySelector("#btn_open_signin_2").addEventListener("click", event => {
-    document.getElementById("overlay_signin").style.display = "block"
+document.querySelector("#btn_signout").addEventListener("click", event => {
+    sessionStorage.removeItem("user")
+    document.getElementById("overlay_welcome").style.display = "block"
 })
 
 // =============== register new user btn ==========================

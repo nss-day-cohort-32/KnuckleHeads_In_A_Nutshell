@@ -2,113 +2,105 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Browserify Boilerplate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Browserify Boilerplate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body>
-    <header class="header">
-      <div class="bars">
-        <div class="addbar">
-          <div class="dropdown2">
-            <button class="dropbtn2">
-              <img
-                class="add-icon"
-                src="img/add-circle-green-512.png"
-                alt="add icon"
-              />
-            </button>
-            <div class="addbtn-content">
-              <a class="add-event" href="events">Events</a>
-              <a href="#">News</a>
-            </div>
+<body>
+  <header class="header">
+    <div class="bars">
+      <div class="addbar">
+        <div class="dropdown2">
+          <button class="dropbtn2">
+            <img class="add-icon" src="img/add-circle-green-512.png" alt="add icon" />
+          </button>
+          <div class="addbtn-content">
+            <a class="add-event" href="events">Events</a>
+            <a href="#">News</a>
           </div>
         </div>
-        <div class="navbar">
-          <div class="dropdown">
-            <button class="dropbtn">
-              <img
-                class="drop-icon"
-                src="img/dropdown-menu-icon.jpg"
-                alt="dropdown icon"
-              />
-            </button>
-            <div class="dropdown-content">
-              <a id="whatever" href="#">Tasks</a>
-              <a href="#">Friends</a>
-              <a href="#">Messages</a>
-              <a id="btn_open_signin_2">Sign In</a>
-            </div>
+      </div>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img class="drop-icon" src="img/dropdown-menu-icon.jpg" alt="dropdown icon" />
+          </button>
+          <div class="dropdown-content">
+            <a id="whatever" href="#">Tasks</a>
+            <a href="#">Friends</a>
+            <a href="#">Messages</a>
+            <a id="btn_signout">Sign Out</a>
           </div>
         </div>
-    </header>
-    <!-- overlay welcome on the the page  -->
-    <div id="overlay_welcome" class="overlay">
-        <span id="btn_close_welcome" title="close overlay">&#215</span>
-        <div id="wrapper_welcome">
-            <article id="container_welcome">
-                <h2>Welcome to KnuckleHead In A Nutshell</h2>
-                <p>First time visiting?</p>
-                <button id="btn_open_signup_1">Sign Up</button>
-                <p>Already a KnuckleHead?</p>
-                <button id="btn_open_signin_1">Sign In</button>
-            </article>
-        </div>
+      </div>
+  </header>
+  <!-- overlay welcome on the the page  -->
+  <div id="overlay_welcome" class="overlay">
+    <span id="btn_close_welcome" title="close overlay">&#215</span>
+    <div id="wrapper_welcome">
+      <article id="container_welcome">
+        <h2>Welcome to KnuckleHead In A Nutshell</h2>
+        <p>First time visiting?</p>
+        <button id="btn_open_signup_1">Sign Up</button>
+        <p>Already a KnuckleHead?</p>
+        <button id="btn_open_signin_1">Sign In</button>
+      </article>
     </div>
-    <div id="overlay_signup" class="overlay">
-        <span id="btn_close_signup" title="close overlay">&#215</span>
-        <div id="wrapper_signup">
-            <h2>Sign Up!</h2>
-            <form id="container_signup">
-                <input type="text" id="sign_up_username" placeholder="Enter Username">
-                <input type="text" id="sign_up_email" placeholder="Enter Email">
-                <input type="text" id="sign_up_password" placeholder="Enter Password">
-                <input type="submit" id="btn_register" value="Join Now">
-            </form>
-        </div>
+  </div>
+  <div id="overlay_signup" class="overlay">
+    <span id="btn_close_signup" title="close overlay">&#215</span>
+    <div id="wrapper_signup">
+      <h2>Sign Up!</h2>
+      <form id="container_signup">
+        <input type="text" id="sign_up_username" placeholder="Enter Username">
+        <input type="text" id="sign_up_email" placeholder="Enter Email">
+        <input type="text" id="sign_up_password" placeholder="Enter Password">
+        <input type="submit" id="btn_register" value="Join Now">
+      </form>
     </div>
-    <div id="overlay_signin" class="overlay">
-        <span id="btn_close_signin" title="close overlay">&#215</span>
-        <div id="wrapper_signin">
-            <h2>Sign in KnuckleHead!</h2>
-            <form id="container_signin">
-                <input type="text" id="sign_in_username" placeholder="Enter Username">
-                <input type="text" id="sign_in_password" placeholder="Enter Password">
-                <input type="submit" id="btn_sign_in" value="Sign In">
-            </form>
-        </div>
+  </div>
+  <div id="overlay_signin" class="overlay">
+    <span id="btn_close_signin" title="close overlay">&#215</span>
+    <div id="wrapper_signin">
+      <h2>Sign in KnuckleHead!</h2>
+      <form id="container_signin">
+        <input type="text" id="sign_in_username" placeholder="Enter Username">
+        <input type="text" id="sign_in_password" placeholder="Enter Password">
+        <input type="submit" id="btn_sign_in" value="Sign In">
+      </form>
     </div>
-    <!--==============================Public/Pirvate Wrapper====================================-->
-    </div>
-    <div id="wrapper_public">
-        <div id="news-container">News</div>
-        <div id="events-container">Events</div>
-    </div>
+  </div>
+  <!--==============================Public/Pirvate Wrapper====================================-->
+  </div>
+  <div id="wrapper_public">
+    <div id="news-container">News</div>
+    <div id="events-container">Events</div>
+  </div>
 
-    <div id="wrapper_public">
-      <div id="news-container">News</div>
-      <div id="events-container">Events</div>
-    </div>
-    <div id="wrapper_private" class="hidden">
-      <div id="tasks-container">Tasks</div>
-    </div>
-    <div id="wrapper_social">
-      <div id="messages-container"></div>
-      <div id="friends-container"></div>
-    </div>
+  <div id="wrapper_public">
+    <div id="news-container">News</div>
+    <div id="events-container">Events</div>
+  </div>
+  <div id="wrapper_private" class="hidden">
+    <div id="tasks-container">Tasks</div>
+  </div>
+  <div id="wrapper_social">
+    <div id="messages-container"></div>
+    <div id="friends-container"></div>
+  </div>
 
-    <footer class="footer"></footer>
-    <article class="output"></article>
+  <footer class="footer"></footer>
+  <article class="output"></article>
 
-    <div id="wrapper_social">
-        <div id="messages-container">Messages</div>
-        <div id="friends-container">Friends</div>
-    </div>
-    <footer class="footer"></footer>
-    <script src="bundle.js"></script>
+  <div id="wrapper_social">
+    <div id="messages-container">Messages</div>
+    <div id="friends-container">Friends</div>
+  </div>
+  <footer class="footer"></footer>
+  <script src="bundle.js"></script>
 </body>
 
 </html>
