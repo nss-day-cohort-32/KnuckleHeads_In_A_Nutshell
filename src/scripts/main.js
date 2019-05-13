@@ -33,8 +33,9 @@ document.querySelector("#btn_open_signin_1").addEventListener("click", event => 
 
 })
 
-document.querySelector("#btn_open_signin_2").addEventListener("click", event => {
-    document.getElementById("overlay_signin").style.display = "block"
+document.querySelector("#btn_signout").addEventListener("click", event => {
+    sessionStorage.removeItem("user")
+    document.getElementById("overlay_welcome").style.display = "block"
 })
 
 // =============== register new user btn ==========================
@@ -49,12 +50,30 @@ document.getElementById("btn_sign_in").addEventListener("click", event => {
     signIn();
 })
 
-document.getElementById("btn_add_news").addEventListener("click",event => {
-    event.preventDefault()
-    console.log("event", event);
-    addNews();
+document.getElementById("btn_overlay_event").addEventListener("click", event => {
+    document.getElementById("overlay_event").style.display = "block"
 })
+
+document.getElementById("btn_close_event_form").addEventListener("click", event => {
+    document.getElementById("overlay_event").style.display = "none"
+})
+
+document.getElementById("btn_overlay_news").addEventListener("click", event => {
+    document.getElementById("overlay_news").style.display = "block"
+})
+
+document.getElementById("btn_close_news_form").addEventListener("click", event => {
+    document.getElementById("overlay_news").style.display = "none"
+})
+
 document.getElementById("btn_add_event").addEventListener("click", event => {
     event.preventDefault()
     addEvent()
+    document.location.reload()
+})
+
+document.getElementById("btn_add_news").addEventListener("click", event => {
+    event.preventDefault()
+    console.log("event", event);
+    addNews();
 })

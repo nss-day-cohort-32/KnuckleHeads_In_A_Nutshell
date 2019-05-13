@@ -5,6 +5,12 @@
       "email": "jr",
       "password": "jr",
       "id": 1
+    },
+    {
+      "username": "jake",
+      "email": "jake",
+      "password": "jake",
+      "id": 2
     }
   ],
   "friends": [
@@ -100,42 +106,33 @@
   ],
   "events": [
     {
-      "id": 1,
-      "user_id": 1,
-      "event": "Innovative non-volatile secured line",
-      "description ": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
-    },
-    {
-      "id": 2,
-      "user_id": 2,
-      "event": "Persevering systemic methodology",
-      "description ": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
-    },
-    {
-      "id": 4,
-      "user_id": 4,
-      "event": "Centralized tertiary local area network",
-      "description ": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."
-    },
-    {
-      "title": "",
-      "summary": "",
-      "date": "",
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
       "id": 7
+    },
+    {
+      "title": "ads",
+      "date": "2019-05-16",
+      "summary": "dsaads",
+      "id": 8
+    },
+    {
+      "title": "jake",
+      "date": "2019-04-30",
+      "summary": "jake",
+      "id": 9
     }
   ],
   "news": [
     {
-      "title": "fuck",
-      "synopsis": "you",
-      "url": "bitch",
-      "id": 14
+      "title": "amsdaslnk",
+      "synopsis": "lknaskljndaskljn",
+      "url": "klnasdklncalkndfsa",
+      "id": 1
+    },
+    {
+      "title": "titties",
+      "synopsis": "tities",
+      "url": "baale",
+      "id": 2
     }
   ]
 }
