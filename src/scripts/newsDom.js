@@ -38,7 +38,7 @@ const newsDom = () => {
             // newsUrlName.appendChild(urlName);
             // console.log("news", news);
             frag.appendChild(newsDiv);
-            document.getElementById("news_wrapper").appendChild(frag);
+            document.getElementById("container_news").appendChild(frag);
             function deleteMe() {
                 API.deleteCall("news", myNews.id)
                     .then(document.location.reload(true));

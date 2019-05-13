@@ -1,11 +1,11 @@
 
 import newsDom from "./newsDom";
-import API from "./dbCalls"
 import domBuilder from "./dombuilder"
 import createUser from "./signUp";
 import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
 import addNews from "./newsPostCall"
+import addEvent from "./eventPost"
 
 // ============== Check for User First =========================
 checkforUser()
@@ -53,4 +53,8 @@ document.getElementById("btn_add_news").addEventListener("click",event => {
     event.preventDefault()
     console.log("event", event);
     addNews();
+})
+document.getElementById("btn_add_event").addEventListener("click", event => {
+    event.preventDefault()
+    addEvent()
 })

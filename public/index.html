@@ -16,13 +16,13 @@
           <div class="dropdown2">
             <button class="dropbtn2">
               <img
-                class="add-icon"
-                src="img/add-circle-green-512.png"
-                alt="add icon"
+              class="add-icon"
+              src="img/add-circle-green-512.png"
+              alt="add icon"
               />
             </button>
             <div class="addbtn-content">
-              <a class="add-event" href="events">Events</a>
+              <a id="add-event" href="#">Events</a>
               <a href="#">News</a>
             </div>
           </div>
@@ -31,9 +31,9 @@
           <div class="dropdown">
             <button class="dropbtn">
               <img
-                class="drop-icon"
-                src="img/dropdown-menu-icon.jpg"
-                alt="dropdown icon"
+              class="drop-icon"
+              src="img/dropdown-menu-icon.jpg"
+              alt="dropdown icon"
               />
             </button>
             <div class="dropdown-content">
@@ -44,8 +44,9 @@
             </div>
           </div>
         </div>
-    </header>
-    <!-- overlay welcome on the the page  -->
+      </header>
+      <h1 style="text-align: center">NUTSHELL</h1>
+      <!-- overlay welcome on the the page  -->
     <div id="overlay_welcome" class="overlay">
         <span id="btn_close_welcome" title="close overlay">&#215</span>
         <div id="wrapper_welcome">
@@ -90,29 +91,40 @@
             <textarea id="news_synopsis" placeholder="synopsis">synopsis</textarea>
             <input type="text" id="news_url">
             <input type="submit" id="btn_add_news" value="Add News">
+    <div id="overlay_event">
+        <span id="btn_close_event_form" title="close overlay">&#215</span>
+        <div id="wrapper_event_form">
+          <h2>Add Event:</h2>
+          <form id="container_event_form">
+            <input type="text" id="event_title" placeholder="title">
+            <textarea id="event_summary" placeholder="summary">summary</textarea>
+            <input type="date" id="event_date">
+            <input type="submit" id="btn_add_event" value="Add Event">
           </form>
         </div>
       </div>
     <!--==============================Public/Pirvate Wrapper====================================-->
+  
+    <div id="wrapper_public">
+      <div id="container_events"></div>
+      <div id="container_news"></div>
     </div>
-    <div id="wrapper_public"></div>
-    <div id ="news_wrapper"></div>
-    
     <div id="wrapper_private" class="hidden">
-      <div id="tasks-container">Tasks</div>
+      <div id="tasks-container"></div>
     </div>
     <div id="wrapper_social">
       <div id="messages-container"></div>
       <div id="friends-container"></div>
     </div>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+    <div id="wrapper_social">
+        <div id="messages-container"></div>
+        <div id="friends-container"></div>
+    </div>
+  </footer>
     <article class="output"></article>
 
-    <div id="wrapper_social">
-        <div id="messages-container">Messages</div>
-        <div id="friends-container">Friends</div>
-    </div>
     <footer class="footer"></footer>
     <script src="bundle.js"></script>
 </body>
