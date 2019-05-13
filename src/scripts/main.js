@@ -45,3 +45,19 @@ document.getElementById("btn_sign_in").addEventListener("click", event => {
     event.preventDefault();
     signIn();
 })
+
+document.getElementById("btn_overlay_event").addEventListener("click", event => {
+    document.getElementById("overlay_event").style.display = "block"
+})
+
+document.getElementById("btn_close_event_form").addEventListener("click", event => {
+    document.getElementById("overlay_event").style.display = "none"
+})
+
+document.getElementById("btn_overlay_news").addEventListener("click", event => {
+    document.getElementById("overlay_news").style.display = "block"
+})
+
+document.getElementById("btn_close_news_form").addEventListener("click", event => {
+    document.getElementById("overlay_news").style.display = "none"
+})

@@ -18,8 +18,8 @@
             <img class="add-icon" src="img/add-circle-green-512.png" alt="add icon" />
           </button>
           <div class="addbtn-content">
-            <a class="add-event" href="events">Events</a>
-            <a href="#">News</a>
+            <a id="btn_overlay_event">Events</a>
+            <a id="btn_overlay_news">News</a>
           </div>
         </div>
       </div>
@@ -73,16 +73,36 @@
       </form>
     </div>
   </div>
+  <!-- =================== add event/news form ============================================-->
+  <div id="overlay_event">
+    <span id="btn_close_event_form" title="close overlay">&#215</span>
+    <div id="wrapper_event_form">
+      <h2>Add Event:</h2>
+      <form id="container_event_form">
+        <input type="text" id="event_title" placeholder="title">
+        <textarea id="event_summary" placeholder="summary"></textarea>
+        <input type="date" id="event_date">
+        <input type="submit" id="btn_add_event" value="Add Event">
+      </form>
+    </div>
+  </div>
+  <div id="overlay_news">
+    <span id="btn_close_news_form" title="close overlay">&#215</span>
+    <div id="wrapper_news_form">
+      <h2>Add News</h2>
+      <form id="container_news_form">
+        <input type="text" id="news_title" placeholder="title">
+        <textarea id="news_synopsis" placeholder="synopsis"></textarea>
+        <input type="text" id="news_url">
+        <input type="submit" id="btn_add_news" value="Add News">
+      </form>
+    </div>
+  </div>
   <!--==============================Public/Pirvate Wrapper====================================-->
   </div>
   <div id="wrapper_public">
-    <div id="news-container">News</div>
-    <div id="events-container">Events</div>
-  </div>
-
-  <div id="wrapper_public">
-    <div id="news-container">News</div>
-    <div id="events-container">Events</div>
+    <div id="container_events"></div>
+    <div id="container_news"></div>
   </div>
   <div id="wrapper_private" class="hidden">
     <div id="tasks-container">Tasks</div>
