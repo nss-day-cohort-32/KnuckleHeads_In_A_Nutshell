@@ -147,6 +147,33 @@
   background: rgb(19, 110, 214)
 }
 #container_signup input[type=submit]:hover,
-#container_signin input[type=submit]:hover{
+  #container_signin input[type=submit]:hover{
   background:rgb(15, 76, 145)
+}
+
+#container_welcome button{
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bold;
+  background: rgb(19, 110, 214);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#container_welcome button:hover{
+  background:rgb(15, 76, 145)
+
+}
+
+#container_welcome p{
+  font-size: 20px;
+
 }

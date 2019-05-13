@@ -15,18 +15,20 @@ function createUser() {
         .then(users => {
             console.log(users)
             if (users.every(checkUniqueUser) === false) {
-                alert("Username already in use try another username")
+                alert("Username or email already in use try another username or email")
             } else {
-                console.log(userObj)
                 API.postCall("users", userObj)
+                sessionStorage.setItem("user", JSON.stringify(userObj))
+                document.getElementById("overlay_signup").style.display = "none"
             }
         })
 
     function checkUniqueUser(user) {
         const testName = user.username.trim().toLowerCase();
         const uniqueName = name.trim().toLowerCase();
-        return (testName !== uniqueName)
-
+        const testEmail = user.email.trim().toLowerCase()
+        const uniqueEmail = email.trim().toLowerCase()
+        return (testName !== uniqueName && testEmail !== uniqueEmail)
     }
 }
 
