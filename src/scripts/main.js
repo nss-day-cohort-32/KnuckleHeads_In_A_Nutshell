@@ -3,6 +3,7 @@ import domBuilder from "./dombuilder"
 import createUser from "./signUp";
 import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
+import addEvent from "./eventPost"
 
 // ============== Check for User First =========================
 checkforUser()
@@ -43,4 +44,9 @@ document.getElementById("btn_register").addEventListener("click", event => {
 document.getElementById("btn_sign_in").addEventListener("click", event => {
     event.preventDefault();
     signIn();
+})
+
+document.getElementById("btn_add_event").addEventListener("click", event => {
+    event.preventDefault()
+    addEvent()
 })
