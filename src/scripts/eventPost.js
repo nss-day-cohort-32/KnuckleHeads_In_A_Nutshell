@@ -14,7 +14,6 @@ const postedData = {
 }
 console.log(postedData)
 API.postCall("events", postedData)
-document.location.reload()
 }
 
 export default addEvent ;

@@ -102,9 +102,6 @@ function domPrinter(eventData) {
 
     })
     saveEditBtn.addEventListener("click", event => {
-        // const valueInputTitle = inputEventTitle.value
-        // const valueInputSummary = inputEventSummary.value
-        // const valueInputDate = inputEventDate.value
         console.log(typeof valueInputSummary);
         const editedData = {
             title: inputEventTitle.value,
