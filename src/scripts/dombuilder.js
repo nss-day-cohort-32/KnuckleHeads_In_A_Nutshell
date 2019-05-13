@@ -1,7 +1,7 @@
 import API from "./dbCalls"
 
 function domBuilder(resource) {
-    const clearBefore = document.getElementById("wrapper_public")
+    const clearBefore = document.getElementById("container_events")
     while (clearBefore.firstChild) {
         clearBefore.removeChild(clearBefore.firstChild)
     }
@@ -28,8 +28,7 @@ function domPrinter(eventData) {
     const inputEventTitle = document.createElement("input");
     const inputEventSummary = document.createElement("textarea");
     const inputEventDate = document.createElement("input");
-
-
+    inputEventDate.setAttribute("type", "date");
 
 
     deleteBtn.setAttribute("class", "btn_delete")
@@ -38,13 +37,14 @@ function domPrinter(eventData) {
     addEventBtn.setAttribute("class", "add-event")
 
     inputEventTitle.setAttribute("class", "hidden");
-    inputEventTitle.placeholder = `${eventData.title}`
+    inputEventTitle.value = `${eventData.title}`
 
     inputEventSummary.setAttribute("class", "hidden");
-    inputEventSummary.placeholder = `${eventData.summary}`
+    inputEventSummary.value = `${eventData.summary}`
 
     inputEventDate.setAttribute("class", "hidden");
-    inputEventDate.placeholder = `${eventData.date}`
+
+    inputEventDate.value = `${eventData.date}`
 
     deleteBtn.textContent = "DELETE"
     editBtn.textContent = "EDIT"
@@ -63,10 +63,10 @@ function domPrinter(eventData) {
 
     div.appendChild(title)
     div.appendChild(inputEventTitle);
-    div.appendChild(summary)
-    div.appendChild(inputEventSummary);
     div.appendChild(date)
     div.appendChild(inputEventDate);
+    div.appendChild(summary)
+    div.appendChild(inputEventSummary);
 
     div.appendChild(deleteBtn)
     div.appendChild(editBtn)
@@ -102,14 +102,14 @@ function domPrinter(eventData) {
 
     })
     saveEditBtn.addEventListener("click", event => {
-        const valueInputTitle = inputEventTitle.value
-        const valueInputSummary = inputEventSummary.value
-        const valueInputDate = inputEventDate.value
+        // const valueInputTitle = inputEventTitle.value
+        // const valueInputSummary = inputEventSummary.value
+        // const valueInputDate = inputEventDate.value
         console.log(typeof valueInputSummary);
         const editedData = {
-            title: valueInputTitle,
-            summary: valueInputSummary,
-            date: valueInputDate
+            title: inputEventTitle.value,
+            date: inputEventDate.value,
+            summary: inputEventSummary.value
         }
         API.putCall("events", eventData.id, editedData)
             .then(() => {
@@ -118,10 +118,15 @@ function domPrinter(eventData) {
         console.log(inputEventSummary.value);
     })
     docFrag.appendChild(div)
-    document.getElementById("wrapper_public").appendChild(docFrag)
+    document.getElementById("container_events").appendChild(docFrag)
+
+    // function newestEvent(date){
+    //     currentDate = Date.now();
+    //     if (inputEventDate < currentDate){
+    //         div.appendChild(date)
+    //         return true
+    //     }
+    // }
 }
 
 export default domBuilder
-
-
-        // step 1 - get exsiting value of title step 2 - set inputeventtitles value to existing value
