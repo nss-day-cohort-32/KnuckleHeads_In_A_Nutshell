@@ -7,22 +7,42 @@
     <title>Browserify Boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <img class="drop-icon" src="img/dropdown-menu-icon.jpg" alt="dropdown icon" />
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Tasks</a>
-                    <a href="#">Events</a>
-                    <a href="#">Friends</a>
-                    <a id="btn_open_signin_2">Sign In</a>
-                </div>
+      <div class="bars">
+        <div class="addbar">
+          <div class="dropdown2">
+            <button class="dropbtn2">
+              <img
+                class="add-icon"
+                src="img/add-circle-green-512.png"
+                alt="add icon"
+              />
+            </button>
+            <div class="addbtn-content">
+              <a class="add-event" href="events">Events</a>
+              <a href="#">News</a>
             </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img
+                class="drop-icon"
+                src="img/dropdown-menu-icon.jpg"
+                alt="dropdown icon"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a id="whatever" href="#">Tasks</a>
+              <a href="#">Friends</a>
+              <a href="#">Messages</a>
+              <a id="btn_open_signin_2">Sign In</a>
+            </div>
+          </div>
         </div>
     </header>
     <!-- overlay welcome on the the page  -->
@@ -68,9 +88,20 @@
         <div id="events-container">Events</div>
     </div>
 
-    <div id="wrapper_private" class="hidden">
-        <div id="tasks-container">Tasks</div>
+    <div id="wrapper_public">
+      <div id="news-container">News</div>
+      <div id="events-container">Events</div>
     </div>
+    <div id="wrapper_private" class="hidden">
+      <div id="tasks-container">Tasks</div>
+    </div>
+    <div id="wrapper_social">
+      <div id="messages-container"></div>
+      <div id="friends-container"></div>
+    </div>
+
+    <footer class="footer"></footer>
+    <article class="output"></article>
 
     <div id="wrapper_social">
         <div id="messages-container">Messages</div>

@@ -1,9 +1,12 @@
 import API from "./dbCalls"
+import domBuilder from "./dombuilder"
 import createUser from "./signUp";
 import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
+
 // ============== Check for User First =========================
 checkforUser()
+domBuilder("events")
 //============== overlay btn open/close ===========================
 document.querySelector("#btn_close_welcome").addEventListener("click", event => {
     document.getElementById("overlay_welcome").style.display = "none"
