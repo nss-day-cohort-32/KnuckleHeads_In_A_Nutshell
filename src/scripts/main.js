@@ -49,4 +49,5 @@ document.getElementById("btn_sign_in").addEventListener("click", event => {
 document.getElementById("btn_add_event").addEventListener("click", event => {
     event.preventDefault()
     addEvent()
+    document.getElementById("overlay_event").style.display="none"
 })
