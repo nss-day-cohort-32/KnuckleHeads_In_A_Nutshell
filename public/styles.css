@@ -1,10 +1,20 @@
+.div
+
 /* Navbar container */
-.navbar {
+.navbar,
+.addbar {
   overflow: hidden;
   background-color: rgb(44, 45, 60);
   font-family: Arial;
-  padding-bottom: 95px;
+  padding-bottom: 50px;
 }
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
 
 /* Links inside the navbar */
 .navbar a {
@@ -16,36 +26,37 @@
   text-decoration: none;
 }
 
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-/*dropdown Icon*/
-.drop-icon {
+/*dropdown Icons*/
+.drop-icon,
+.add-icon {
   width: 45px;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown .dropbtn,
+.dropdown2 .dropbtn2 {
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Add a  background color to navbar links on hover */
 .navbar a:hover,
-.dropdown:hover .dropbtn {
-  display: flex;
+.dropdown:hover .dropbtn,
+.addbar a:hover,
+.dropdown2:hover .dropbtn2 {
   background-color: rgb(66, 88, 96);
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+.dropdown-content,
+.addbtn-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -64,12 +75,50 @@
   text-align: left;
 }
 
+.addbtn-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  display: block;
+  flex-flow: left;
+}
+
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content a:hover,
+.addbtn-content a:hover {
+  background-color: rgb(67, 84, 113);
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown2:hover .addbtn-content {
   display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
+/* .footer {
+  position: fixed;
+  left: 10px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+} */
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(44, 45, 60);
+}
+
+.footer {
+  background: blue;
 }
