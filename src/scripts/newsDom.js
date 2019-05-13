@@ -1,7 +1,7 @@
 import API from "./dbCalls"
-import reloadPage from "./reloadPage";
-
-const newsDom = (myNews) => {
+const newsDom = () => {
+    API.getCall("news").then(result => {
+        result.forEach(myNews => {
             const newsDiv = document.createElement("div");
             const root = document.getElementById("news");
             root.appendChild(newsDiv);
@@ -21,13 +21,15 @@ const newsDom = (myNews) => {
             newSynopisi.appendChild(synopsis);
             newsUrlName.appendChild(urlName);
             // console.log("news", news);
-            deleteButton.textContent = "DELETE"
-            deleteButton.setAttribute("class", "btn_delete");
-            deleteButton.addEventListener("click", event => {
-                console.log("event", event);
-                reloadPage()
-            })
-        }
-
+        })
+    })
+    deleteButton.textContent = "DELETE"
+    deleteButton.setAttribute("class", "btn_delete");
+    deleteButton.addEventListener("click", event => {
+        API.deleteCall("news", myNews.id)
+        .then(newsDom(root.removeChild(newsDiv)))
+        .then(document.location.reload(true));
+});
+}
 export default newsDom
-
+console.log("newsDom", newsDom);
