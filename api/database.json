@@ -1,29 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "mfrail0",
-      "email": "kfluck0@marriott.com"
-    },
-    {
-      "id": 2,
-      "username": "epitone1",
-      "email": "csimony1@sciencedaily.com"
-    },
-    {
-      "id": 3,
-      "username": "mfrail0",
-      "email": "new"
-    },
-    {
-      "id": 4,
-      "username": "epitone1",
-      "email": "csimony1@sciencedaily.com"
-    },
-    {
-      "id": 5,
-      "username": "naguirre2",
-      "email": "ehackworth2@pen.io"
+      "username": "jr",
+      "email": "jr",
+      "password": "jr",
+      "id": 1
     }
   ],
   "friends": [
@@ -131,102 +112,24 @@
       "description ": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."
     },
     {
-      "id": 3,
-      "user_id": 3,
-      "event": "Customizable leading edge definition",
-      "description ": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
-    },
-    {
       "id": 4,
       "user_id": 4,
       "event": "Centralized tertiary local area network",
       "description ": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."
     },
     {
-      "id": 5,
-      "user_id": 5,
-      "event": "Digitized 3rd generation initiative",
-      "description ": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      "title": "",
+      "summary": "",
+      "date": "",
+      "id": 5
     }
   ],
   "news": [
     {
-      "id": 11,
-      "user_id": 9,
-      "url": "http://xinhuanet.com/habitasse/platea/dictumst/aliquam.html?feugiat=sollicitudin&et=ut&eros=suscipit&vestibulum=a&ac=feugiat&est=et&lacinia=eros&nisi=vestibulum&venenatis=ac&tristique=est&fusce=lacinia&congue=nisi&diam=venenatis&id=tristique&ornare=fusce&imperdiet=congue&sapien=diam&urna=id&pretium=ornare&nisl=imperdiet&ut=sapien&volutpat=urna&sapien=pretium&arcu=nisl&sed=ut&augue=volutpat&aliquam=sapien&erat=arcu&volutpat=sed&in=augue&congue=aliquam&etiam=erat&justo=volutpat&etiam=in&pretium=congue&iaculis=etiam&justo=justo&in=etiam&hac=pretium&habitasse=iaculis&platea=justo&dictumst=in&etiam=hac&faucibus=habitasse&cursus=platea&urna=dictumst&ut=etiam&tellus=faucibus&nulla=cursus&ut=urna&erat=ut&id=tellus&mauris=nulla&vulputate=ut&elementum=erat&nullam=id&varius=mauris&nulla=vulputate&facilisi=elementum&cras=nullam&non=varius&velit=nulla&nec=facilisi&nisi=cras&vulputate=non&nonummy=velit&maecenas=nec&tincidunt=nisi&lacus=vulputate&at=nonummy&velit=maecenas&vivamus=tincidunt&vel=lacus&nulla=at&eget=velit&eros=vivamus&elementum=vel&pellentesque=nulla",
-      "title": "Murk (Mørke)",
-      "synopsis": "Excision tunica les NEC"
-    },
-    {
-      "id": 1,
-      "user_id": 1,
-      "url": "http://redcross.org/quisque.png?in=vel&imperdiet=accumsan&et=tellus&commodo=nisi&vulputate=eu&justo=orci&in=mauris&blandit=lacinia&ultrices=sapien&enim=quis&lorem=libero&ipsum=nullam&dolor=sit&sit=amet&amet=turpis&consectetuer=elementum&adipiscing=ligula&elit=vehicula&proin=consequat&interdum=morbi&mauris=a&non=ipsum&ligula=integer&pellentesque=a&ultrices=nibh&phasellus=in&id=quis&sapien=justo&in=maecenas&sapien=rhoncus&iaculis=aliquam&congue=lacus&vivamus=morbi&metus=quis&arcu=tortor&adipiscing=id&molestie=nulla&hendrerit=ultrices&at=aliquet&vulputate=maecenas&vitae=leo&nisl=odio&aenean=condimentum&lectus=id&pellentesque=luctus&eget=nec&nunc=molestie&donec=sed&quis=justo&orci=pellentesque&eget=viverra&orci=pede&vehicula=ac&condimentum=diam&curabitur=cras&in=pellentesque&libero=volutpat&ut=dui&massa=maecenas&volutpat=tristique&convallis=est&morbi=et&odio=tempus&odio=semper&elementum=est&eu=quam&interdum=pharetra&eu=magna&tincidunt=ac&in=consequat&leo=metus&maecenas=sapien&pulvinar=ut",
-      "title": "Tough Ones, The (Häjyt)",
-      "synopsis": "Insert testicular prosth"
-    },
-    {
-      "id": 2,
-      "user_id": 2,
-      "url": "http://zimbio.com/integer/non.aspx?dis=turpis&parturient=sed&montes=ante&nascetur=vivamus&ridiculus=tortor&mus=duis&etiam=mattis&vel=egestas&augue=metus&vestibulum=aenean&rutrum=fermentum&rutrum=donec&neque=ut&aenean=mauris&auctor=eget&gravida=massa&sem=tempor&praesent=convallis&id=nulla&massa=neque&id=libero&nisl=convallis&venenatis=eget&lacinia=eleifend&aenean=luctus&sit=ultricies&amet=eu&justo=nibh&morbi=quisque&ut=id&odio=justo&cras=sit&mi=amet&pede=sapien&malesuada=dignissim&in=vestibulum&imperdiet=vestibulum&et=ante&commodo=ipsum&vulputate=primis&justo=in&in=faucibus&blandit=orci&ultrices=luctus&enim=et&lorem=ultrices&ipsum=posuere&dolor=cubilia&sit=curae&amet=nulla&consectetuer=dapibus&adipiscing=dolor&elit=vel&proin=est&interdum=donec&mauris=odio&non=justo&ligula=sollicitudin&pellentesque=ut&ultrices=suscipit&phasellus=a&id=feugiat&sapien=et&in=eros&sapien=vestibulum&iaculis=ac&congue=est&vivamus=lacinia&metus=nisi&arcu=venenatis&adipiscing=tristique&molestie=fusce&hendrerit=congue&at=diam",
-      "title": "Unfinished Song (Song for Marion)",
-      "synopsis": "Adrenal reimplantation"
-    },
-    {
-      "id": 3,
-      "user_id": 3,
-      "url": "https://shop-pro.jp/volutpat/erat/quisque.jsp?nisi=vestibulum&vulputate=velit&nonummy=id&maecenas=pretium&tincidunt=iaculis&lacus=diam&at=erat&velit=fermentum&vivamus=justo&vel=nec&nulla=condimentum&eget=neque&eros=sapien&elementum=placerat&pellentesque=ante&quisque=nulla&porta=justo&volutpat=aliquam&erat=quis&quisque=turpis&erat=eget&eros=elit&viverra=sodales&eget=scelerisque&congue=mauris&eget=sit&semper=amet&rutrum=eros&nulla=suspendisse&nunc=accumsan&purus=tortor&phasellus=quis&in=turpis&felis=sed&donec=ante&semper=vivamus&sapien=tortor&a=duis&libero=mattis&nam=egestas&dui=metus&proin=aenean&leo=fermentum&odio=donec&porttitor=ut&id=mauris&consequat=eget&in=massa&consequat=tempor",
-      "title": "Pretty Things",
-      "synopsis": "Intravas img non-cor OCT"
-    },
-    {
-      "id": 4,
-      "user_id": 4,
-      "url": "https://economist.com/neque/libero.aspx?dui=maecenas&vel=leo&sem=odio&sed=condimentum&sagittis=id&nam=luctus&congue=nec",
-      "title": "Life of Emile Zola, The",
-      "synopsis": "Cerebral scan"
-    },
-    {
-      "id": 5,
-      "user_id": 5,
-      "url": "http://jiathis.com/aliquam/non/mauris/morbi.html?facilisi=sed&cras=vestibulum&non=sit&velit=amet&nec=cursus&nisi=id&vulputate=turpis&nonummy=integer&maecenas=aliquet&tincidunt=massa&lacus=id&at=lobortis&velit=convallis&vivamus=tortor&vel=risus&nulla=dapibus&eget=augue&eros=vel&elementum=accumsan&pellentesque=tellus&quisque=nisi&porta=eu&volutpat=orci&erat=mauris&quisque=lacinia&erat=sapien&eros=quis&viverra=libero&eget=nullam&congue=sit&eget=amet&semper=turpis&rutrum=elementum&nulla=ligula&nunc=vehicula&purus=consequat&phasellus=morbi&in=a&felis=ipsum&donec=integer&semper=a&sapien=nibh&a=in&libero=quis&nam=justo&dui=maecenas&proin=rhoncus&leo=aliquam",
-      "title": "Bûche, La",
-      "synopsis": "Bact smear-op wound"
-    },
-    {
-      "id": 6,
-      "user_id": 6,
-      "url": "https://paginegialle.it/quam/sapien/varius/ut/blandit.js?ipsum=dapibus&aliquam=at&non=diam&mauris=nam&morbi=tristique&non=tortor",
-      "title": "Missing Person, The",
-      "synopsis": "Remove imp dev-metat/tar"
-    },
-    {
-      "id": 7,
-      "user_id": 7,
-      "url": "http://w3.org/odio.xml?porttitor=sapien&id=dignissim&consequat=vestibulum&in=vestibulum&consequat=ante&ut=ipsum&nulla=primis&sed=in&accumsan=faucibus&felis=orci&ut=luctus&at=et&dolor=ultrices&quis=posuere&odio=cubilia&consequat=curae&varius=nulla&integer=dapibus&ac=dolor&leo=vel&pellentesque=est&ultrices=donec&mattis=odio&odio=justo&donec=sollicitudin&vitae=ut&nisi=suscipit&nam=a&ultrices=feugiat&libero=et&non=eros&mattis=vestibulum&pulvinar=ac&nulla=est&pede=lacinia&ullamcorper=nisi&augue=venenatis&a=tristique&suscipit=fusce&nulla=congue&elit=diam",
-      "title": "Whiteout",
-      "synopsis": "Cde for calculus remov"
-    },
-    {
-      "id": 8,
-      "user_id": 8,
-      "url": "http://cdc.gov/quisque/id/justo/sit/amet/sapien.xml?eget=cras&nunc=mi&donec=pede&quis=malesuada",
-      "title": "Halloween II",
-      "synopsis": "Open reduc-metac/car fx"
-    },
-    {
-      "id": 9,
-      "user_id": 9,
-      "url": "http://xinhuanet.com/habitasse/platea/dictumst/aliquam.html?feugiat=sollicitudin&et=ut&eros=suscipit&vestibulum=a&ac=feugiat&est=et&lacinia=eros&nisi=vestibulum&venenatis=ac&tristique=est&fusce=lacinia&congue=nisi&diam=venenatis&id=tristique&ornare=fusce&imperdiet=congue&sapien=diam&urna=id&pretium=ornare&nisl=imperdiet&ut=sapien&volutpat=urna&sapien=pretium&arcu=nisl&sed=ut&augue=volutpat&aliquam=sapien&erat=arcu&volutpat=sed&in=augue&congue=aliquam&etiam=erat&justo=volutpat&etiam=in&pretium=congue&iaculis=etiam&justo=justo&in=etiam&hac=pretium&habitasse=iaculis&platea=justo&dictumst=in&etiam=hac&faucibus=habitasse&cursus=platea&urna=dictumst&ut=etiam&tellus=faucibus&nulla=cursus&ut=urna&erat=ut&id=tellus&mauris=nulla&vulputate=ut&elementum=erat&nullam=id&varius=mauris&nulla=vulputate&facilisi=elementum&cras=nullam&non=varius&velit=nulla&nec=facilisi&nisi=cras&vulputate=non&nonummy=velit&maecenas=nec&tincidunt=nisi&lacus=vulputate&at=nonummy&velit=maecenas&vivamus=tincidunt&vel=lacus&nulla=at&eget=velit&eros=vivamus&elementum=vel&pellentesque=nulla",
-      "title": "Murk (Mørke)",
-      "synopsis": "Excision tunica les NEC"
-    },
-    {
-      "id": 10,
-      "user_id": 10,
-      "url": "https://yellowpages.com/augue/luctus/tincidunt.jsp?id=sem&lobortis=praesent&convallis=id&tortor=massa&risus=id&dapibus=nisl&augue=venenatis&vel=lacinia&accumsan=aenean&tellus=sit&nisi=amet&eu=justo&orci=morbi&mauris=ut&lacinia=odio&sapien=cras&quis=mi&libero=pede&nullam=malesuada&sit=in&amet=imperdiet&turpis=et&elementum=commodo&ligula=vulputate&vehicula=justo&consequat=in&morbi=blandit&a=ultrices&ipsum=enim&integer=lorem&a=ipsum&nibh=dolor&in=sit&quis=amet&justo=consectetuer&maecenas=adipiscing&rhoncus=elit&aliquam=proin&lacus=interdum&morbi=mauris&quis=non&tortor=ligula&id=pellentesque&nulla=ultrices&ultrices=phasellus&aliquet=id&maecenas=sapien&leo=in",
-      "title": "Dance with the Devil (Perdita Durango)",
-      "synopsis": "Thymectomy NOS"
+      "title": "fuckk",
+      "synopsis": "youuu",
+      "url": "bittchhh",
+      "id": 13
     }
   ]
-
 }

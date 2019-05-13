@@ -22,7 +22,6 @@ const API = {
             },
             body: JSON.stringify(data)
         })
-
     },
     putCall: (resource, id, data) => {
         return fetch(`${src}/${resource}/${id}`, {
@@ -37,3 +36,4 @@ const API = {
 }
 
 export default API
+
