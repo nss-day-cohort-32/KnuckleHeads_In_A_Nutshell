@@ -3,6 +3,7 @@ import domBuilder from "./dombuilder"
 import createUser from "./signUp";
 import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
+import addEvent from "./eventPost"
 
 // ============== Check for User First =========================
 checkforUser()
@@ -60,4 +61,10 @@ document.getElementById("btn_overlay_news").addEventListener("click", event => {
 
 document.getElementById("btn_close_news_form").addEventListener("click", event => {
     document.getElementById("overlay_news").style.display = "none"
+})
+
+document.getElementById("btn_add_event").addEventListener("click", event => {
+    event.preventDefault()
+    addEvent()
+    document.location.reload()
 })
