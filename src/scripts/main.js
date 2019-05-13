@@ -1,5 +1,5 @@
 import API from "./dbCalls";
-import newsDom from "./newsDom";
+import newsObj from "./newsDom";
 
-
-newsDom()
+newsObj.newsDom()
+newsObj.deleteMe()
