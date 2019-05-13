@@ -10,9 +10,6 @@ const API = {
         return fetch(`${src}/${resource}/${id}`, {
             method: "DELETE"
         })
-            .then(
-
-            )
     },
     postCall: (resource, data) => {
         return fetch(`${src}/${resource}`, {
@@ -33,7 +30,7 @@ const API = {
             },
             body: JSON.stringify(data)
         })
-    },
+    }
 }
 
 export default API
