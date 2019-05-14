@@ -112,18 +112,6 @@
   ],
   "events": [
     {
-      "title": "event 1",
-      "date": "2019-05-13",
-      "summary": "location",
-      "id": 7
-    },
-    {
-      "title": "event 2",
-      "date": "2019-05-16",
-      "summary": "location",
-      "id": 8
-    },
-    {
       "title": "event 3",
       "date": "2019-05-15",
       "summary": "this is a 3rd event",
@@ -132,15 +120,10 @@
   ],
   "news": [
     {
-      "title": "News article 1",
-      "synopsis": "News Synopsis ",
-      "url": "www.url.com",
-      "id": 1
-    },
-    {
-      "title": "News article 2",
-      "synopsis": "News Synopsis",
-      "url": "www.url.com",
+      "title": "yup",
+      "synopsis": "hello",
+      "url": "www.google.com",
+      "time": "Mon May 13 2019 22:36:59 GMT-0500 (Central Daylight Time)",
       "id": 2
     }
   ]
