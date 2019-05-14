@@ -13,10 +13,64 @@
       "id": 2
     },
     {
+      "username": "joey",
+      "email": "joey",
+      "password": "joey",
+      "id": 3
+    },
+    {
       "username": "dude",
       "email": "dude",
       "password": "dude",
-      "id": 3
+      "id": 4
+    },
+    {
+      "username": "nss",
+      "email": "nss",
+      "password": "nss",
+      "id": 5
+    },
+    {
+      "username": "myDude",
+      "email": "myDude",
+      "password": "myDude",
+      "id": 6
+    },
+    {
+      "username": "bryan",
+      "email": "bryan",
+      "password": "bryan",
+      "id": 7
+    },
+    {
+      "username": "cornsilk",
+      "email": "corn",
+      "password": "corn",
+      "id": 8
+    },
+    {
+      "username": "hgh",
+      "email": "ghg",
+      "password": "ghh",
+      "id": 9
+    },
+    {
+      "username": "qwe",
+      "email": "qwe",
+      "password": "qwe",
+      "id": 10
+    },
+    {
+      "username": "q",
+      "email": "q",
+      "password": "q",
+      "id": 11
+    },
+    {
+      "username": "e",
+      "email": "e",
+      "password": "e",
+      "id": 12
     }
   ],
   "friends": [
@@ -53,29 +107,24 @@
   ],
   "messages": [
     {
-      "id": 1,
-      "user_id": 1,
-      "massage": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."
+      "message": "hi",
+      "userId": 2,
+      "id": 1
     },
     {
-      "id": 2,
-      "user_id": 2,
-      "massage": "Sed ante. Vivamus tortor. Duis mattis egestas metus."
+      "message": "yo",
+      "userId": 2,
+      "id": 2
     },
     {
-      "id": 3,
-      "user_id": 3,
-      "massage": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+      "message": "hi",
+      "userId": 11,
+      "id": 7
     },
     {
-      "id": 4,
-      "user_id": 4,
-      "massage": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
-    },
-    {
-      "id": 5,
-      "user_id": 5,
-      "massage": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
+      "message": "j",
+      "userId": 12,
+      "id": 8
     }
   ],
   "tasks": [
@@ -112,18 +161,43 @@
   ],
   "events": [
     {
-      "title": "dude",
+      "title": "event 1",
+      "date": "2019-05-13",
+      "summary": "location",
+      "id": 7
+    },
+    {
+      "title": "event 2",
       "date": "2019-05-16",
-      "summary": "dude",
-      "id": 1
+      "summary": "location",
+      "id": 8
+    },
+    {
+      "title": "event 3",
+      "date": "2019-05-15",
+      "summary": "this is a 3rd event",
+      "id": 9
     }
   ],
   "news": [
     {
-      "title": "yess",
-      "synopsis": "yess",
-      "url": "yesss",
+      "title": "News article 1",
+      "synopsis": "News Synopsis ",
+      "url": "www.url.com",
       "id": 1
+    },
+    {
+      "title": "News article 2",
+      "synopsis": "News Synopsis",
+      "url": "www.url.com",
+      "id": 2
+    },
+    {
+      "title": "new",
+      "synopsis": "news",
+      "url": "hahaha",
+      "time": "Tue May 14 2019 08:53:53 GMT-0500 (Central Daylight Time)",
+      "id": 3
     }
   ]
 }

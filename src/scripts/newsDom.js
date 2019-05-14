@@ -20,6 +20,9 @@ const newsDom = () => {
             newsUrlName.textContent = myNews.url
             newsDiv.appendChild(newsUrlName)
             newsUrlName.setAttribute("href", "url")
+            const newsTime = document.createElement("h3");
+            newsTime.textContent = myNews.time;
+            newsDiv.appendChild(newsTime);
             const deleteButton = document.createElement("button");
             deleteButton.textContent = "Delete"
             newsDiv.appendChild(deleteButton)

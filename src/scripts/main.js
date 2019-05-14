@@ -6,11 +6,14 @@ import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
 import addNews from "./newsPostCall"
 import addEvent from "./eventPost"
+import getMessage from "./domMessage"
+import sendMessage from "./sendMessage"
 
 // ============== Check for User First =========================
 checkforUser()
 newsDom()
 domBuilder("events")
+getMessage()
 //============== overlay btn open/close ===========================
 document.querySelector("#btn_close_welcome").addEventListener("click", event => {
     document.getElementById("overlay_welcome").style.display = "none"
@@ -74,6 +77,9 @@ document.getElementById("btn_add_event").addEventListener("click", event => {
 
 document.getElementById("btn_add_news").addEventListener("click", event => {
     event.preventDefault()
-    console.log("event", event);
     addNews();
+})
+
+document.getElementById("btn_send_message").addEventListener("click", event => {
+    sendMessage()
 })
