@@ -6,11 +6,15 @@ import signIn from "./signIn"
 import checkforUser from "./welcomeHandler";
 import addNews from "./newsPostCall"
 import addEvent from "./eventPost"
-
+import runTasks from "./tasksDOM"
 // ============== Check for User First =========================
 checkforUser()
 newsDom()
 domBuilder("events")
+runTasks.createTasks()
+runTasks.editTasks()
+runTasks.getTasks()
+
 //============== overlay btn open/close ===========================
 document.querySelector("#btn_close_welcome").addEventListener("click", event => {
     document.getElementById("overlay_welcome").style.display = "none"

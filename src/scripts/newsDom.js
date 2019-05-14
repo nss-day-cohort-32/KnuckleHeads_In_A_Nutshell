@@ -8,19 +8,24 @@ const newsDom = () => {
             console.log("News", myNews);
             const frag = document.createDocumentFragment()
             const newsDiv = document.createElement("div");
+            newsDiv.setAttribute("class", "n-div")
             // const root = document.getElementById("news-container");
             // root.appendChild(newsDiv);
-            const newsTitle = document.createElement("h3");
+            const newsTitle = document.createElement("h2");
+            newsTitle.setAttribute("class", "news_title")
             newsTitle.textContent = myNews.title;
             newsDiv.appendChild(newsTitle);
-            const newSynopisi = document.createElement("p");
+            const newSynopisi = document.createElement("h3");
+            newSynopisi.setAttribute("class", "news_syn")
             newSynopisi.textContent = myNews.synopsis
             newsDiv.appendChild(newSynopisi);
             const newsUrlName = document.createElement("a");
+            newsUrlName.setAttribute("class", "news_url")
             newsUrlName.textContent = myNews.url
             newsDiv.appendChild(newsUrlName)
             newsUrlName.setAttribute("href", "url")
             const newsTime = document.createElement("h3");
+            newsTime.setAttribute("class", "news_time")
             newsTime.textContent = myNews.time;
             newsDiv.appendChild(newsTime);
             const deleteButton = document.createElement("button");

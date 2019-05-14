@@ -14,8 +14,9 @@ function domBuilder(resource) {
             const lastEventStyle = document.getElementById(`event_div_${lastEvent}`)
             console.log(lastEventStyle)
             lastEventStyle.style.fontWeight="900"
-            lastEventStyle.style.fontSize="45px"
-            lastEventStyle.style.backgroundColor="brown"
+            lastEventStyle.style.fontSize="20px"
+            lastEventStyle.style.backgroundColor="teal"
+            lastEventStyle.style.paddingBottom="10px"
         })
 
 
@@ -27,7 +28,7 @@ function domPrinter(eventData, index) {
     div.setAttribute("id", `event_div_${index}`)
 
     const title = document.createElement("h2");
-    const date = document.createElement("h2");
+    const date = document.createElement("p");
     const summary = document.createElement("p");
 
     const deleteBtn = document.createElement("button");
@@ -37,7 +38,7 @@ function domPrinter(eventData, index) {
 
 
     const inputEventTitle = document.createElement("input");
-    const inputEventSummary = document.createElement("textarea");
+    const inputEventSummary = document.createElement("input");
     const inputEventDate = document.createElement("input");
     inputEventDate.setAttribute("type", "date");
 
@@ -49,7 +50,7 @@ function domPrinter(eventData, index) {
     editBtn.setAttribute("class", "btn_edit")
     saveEditBtn.setAttribute("class", "btn_save_edits")
     addEventBtn.setAttribute("class", "add-event")
-
+    inputEventTitle.setAttribute("class", "event-title");
     inputEventTitle.setAttribute("class", "hidden");
     inputEventTitle.value = `${eventData.title}`
 
@@ -99,6 +100,8 @@ function domPrinter(eventData, index) {
     })
 
     editBtn.addEventListener("click", event => {
+        saveEditBtn.style.display="block"
+        editBtn.style.display="none"
         inputEventTitle.setAttribute("class", "unhidden")
         inputEventTitle.setAttribute("value", `${eventData.title}`);
         inputEventTitle.removeAttribute("class", "hidden");
@@ -115,6 +118,8 @@ function domPrinter(eventData, index) {
         date.setAttribute("class", "hidden")
 
     })
+    saveEditBtn.style.display="none"
+    editBtn.style.display="block"
     saveEditBtn.addEventListener("click", event => {
         console.log(typeof valueInputSummary);
         const editedData = {
@@ -127,6 +132,7 @@ function domPrinter(eventData, index) {
                 domBuilder("events")
             })
         console.log(inputEventSummary.value);
+
     })
     docFrag.appendChild(div)
     document.getElementById("container_events").appendChild(docFrag)
