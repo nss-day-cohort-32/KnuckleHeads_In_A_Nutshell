@@ -110,14 +110,6 @@
   display: block;
 }
 
-/* .footer {
-  position: fixed;
-  left: 10px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
-} */
-
 .bars {
   display: flex;
   justify-content: space-between;
@@ -212,7 +204,8 @@
 #container_signup input[type=submit],
 #container_signin input[type=submit],
 #container_event_form input[type=submit],
-#container_news_form input[type=submit] {
+#container_news_form input[type=submit],
+#btn_send_message{
   font-size: 16px;
   margin-top: 30px;
   color: #fff;
@@ -223,7 +216,8 @@
 #container_signup input[type=submit]:hover,
 #container_signin input[type=submit]:hover,
 #container_event_form input[type=submit]:hover,
-#container_news_form input[type=submit]:hover {
+#container_news_form input[type=submit]:hover,
+#btn_send_message:hover {
   background: rgb(15, 76, 145)
 }
 
@@ -252,6 +246,55 @@
   font-size: 20px;
 
 }
+/* ==================== footer ========================== */
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 180px;
+  background: rgb(44, 45, 60);
+  padding: 0px;
+  width: 100%;
+  
+}
+
+#wrapper_social{
+  margin: 8px;
+
+}
+
+#container_message_received{
+  height:100px;
+  width:100%;
+  overflow:auto;
+  border:5px solid #EAF5FA;
+  padding:2%;
+  background: #EAF5FA;
+}
+
+#container_message_received div{
+  border: solid #EAF5FA;
+  border-radius: 5px;
+  margin: 0px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  
+}
+
+#container_message_received .username{
+  color: #0028F8;
+}
+
+#wrapper_social{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+
+}
+
 
 #wrapper_public {
   display: flex;
@@ -341,6 +384,7 @@ button {
 }
 
 body {
+  padding-bottom: 175px;
   background-image: url(img/1.jpg)
 }
 

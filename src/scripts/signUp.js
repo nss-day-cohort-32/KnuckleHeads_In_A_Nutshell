@@ -18,7 +18,12 @@ function createUser() {
                 alert("Username or email already in use try another username or email")
             } else {
                 API.postCall("users", userObj)
-                sessionStorage.setItem("user", JSON.stringify(userObj))
+                    .then(result => result.json())
+                    .then(res => {
+                        console.log("res:", res)
+                        sessionStorage.setItem("user", JSON.stringify(res))
+                    }
+                    )
                 document.getElementById("overlay_signup").style.display = "none"
             }
         })

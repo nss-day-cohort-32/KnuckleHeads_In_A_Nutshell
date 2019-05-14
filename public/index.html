@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Browserify Boilerplate</title>
+  <title>KnuckleHead</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -113,16 +113,16 @@
     <div id="friends-container"></div>
   </div>
 
-  <footer class="footer"></footer>
-  <article class="output"></article>
-
-  <div id="wrapper_social">
-    <div id="messages-container"></div>
-    <div id="friends-container"></div>
-  </div>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div id="wrapper_social">
+      <div id="container_message_received"></div>
+      <div id="container_message_send">
+        <input id="input_message" type="text">
+        <button id="btn_send_message">Send</button>
+      </div>
+    </div>
+  </footer>
   <script src="bundle.js"></script>
-
 </body>
 
 </html>

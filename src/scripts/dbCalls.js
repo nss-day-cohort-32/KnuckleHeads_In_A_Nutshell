@@ -6,6 +6,11 @@ const API = {
             .then(result => result.json())
 
     },
+    getCallWithUser: (resource) => {
+        return fetch(`${src}/${resource}?_expand=user`)
+            .then(result => result.json())
+
+    },
     deleteCall: (resource, id) => {
         return fetch(`${src}/${resource}/${id}`, {
             method: "DELETE",

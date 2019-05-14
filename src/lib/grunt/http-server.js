@@ -15,7 +15,7 @@ module.exports = {
         // Specify "0.0.0.0" to be available everywhere
         host: "0.0.0.0",
 
-        showDir : false,
+        showDir: false,
         autoIndex: true,
 
         // server default file extension
@@ -26,6 +26,6 @@ module.exports = {
 
         // Change to true for grunt task to open the
         // browser automatically
-        openBrowser : false
+        openBrowser: false
     }
 }
