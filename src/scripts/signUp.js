@@ -13,7 +13,7 @@ function createUser() {
 
     API.getCall("users")
         .then(users => {
-            console.log(users)
+            // console.log(users)
             if (users.every(checkUniqueUser) === false) {
                 alert("Username or email already in use try another username or email")
             } else {

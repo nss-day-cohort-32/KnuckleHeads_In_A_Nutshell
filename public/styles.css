@@ -127,7 +127,9 @@
 
 #wrapper_welcome,
 #wrapper_signup,
-#wrapper_signin {
+#wrapper_signin,
+#wrapper_event_form,
+#wrapper_news_form{
   max-width: 350px;
   margin: auto;
   padding: 20px;
@@ -137,13 +139,17 @@
 
 #container_welcome,
 #container_signup,
-#container_signin {
+#container_signin,
+#conatiner_event_form,
+#container_news_form{
   margin: 20px 0px
 }
 
 #container_welcome h2,
 #wrapper_signup h2,
-#wrapper_signin h2 {
+#wrapper_signin h2,
+#wrapper_event_form h2,
+#wapper_news_form h2{
   margin: 0;
   padding: 0;
   font-size: 2em;
@@ -152,7 +158,9 @@
 
 #overlay_welcome,
 #overlay_signup,
-#overlay_signin {
+#overlay_signin,
+#overlay_event,
+#overlay_news{
   height: 100%;
   width: 100%;
   position: fixed;
@@ -163,13 +171,17 @@
 }
 
 #overlay_signup,
-#overlay_signin {
+#overlay_signin,
+#overlay_event,
+#overlay_news{
   display: none;
 }
 
 #btn_close_signup,
 #btn_close_welcome,
-#btn_close_signin {
+#btn_close_signin,
+#btn_close_event_form, 
+#btn_close_news_form{
   position: absolute;
   top: 20px;
   right: 45px;
@@ -178,7 +190,11 @@
 }
 
 #container_signup input,
-#container_signin input {
+#container_signin input,
+#container_event_form input,
+#container_event_form textarea,
+#container_news_form input,
+#container_news_form textarea{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -191,7 +207,9 @@
 }
 
 #container_signup input[type=submit],
-#container_signin input[type=submit] {
+#container_signin input[type=submit],
+#container_event_form input[type=submit],
+#container_news_form input[type=submit]{
   font-size: 16px;
   margin-top: 30px;
   color: #fff;
@@ -200,7 +218,9 @@
 }
 
 #container_signup input[type=submit]:hover,
-#container_signin input[type=submit]:hover {
+#container_signin input[type=submit]:hover,
+#container_event_form input[type=submit]:hover,
+#container_news_form input[type=submit]:hover {
   background: rgb(15, 76, 145)
 }
 
