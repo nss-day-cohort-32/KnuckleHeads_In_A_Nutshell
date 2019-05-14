@@ -110,21 +110,14 @@
       "desciption": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus."
     }
   ],
-  "events": [
-    {
-      "title": "event 3",
-      "date": "2019-05-15",
-      "summary": "this is a 3rd event",
-      "id": 9
-    }
-  ],
+  "events": [],
   "news": [
     {
-      "title": "yup",
-      "synopsis": "hello",
-      "url": "www.google.com",
-      "time": "Mon May 13 2019 22:36:59 GMT-0500 (Central Daylight Time)",
-      "id": 2
+      "title": "Whiskey Banned",
+      "synopsis": "No MOre Whiskey",
+      "url": "http://nashvillesoftwareschool.com",
+      "time": "Tue May 14 2019 09:27:24 GMT-0500 (Central Daylight Time)",
+      "id": 1
     }
   ]
 }

@@ -8,8 +8,6 @@ const newsDom = () => {
             console.log("News", myNews);
             const frag = document.createDocumentFragment()
             const newsDiv = document.createElement("div");
-            // const root = document.getElementById("news-container");
-            // root.appendChild(newsDiv);
             const newsTitle = document.createElement("h3");
             newsTitle.textContent = myNews.title;
             newsDiv.appendChild(newsTitle);
@@ -19,7 +17,7 @@ const newsDom = () => {
             const newsUrlName = document.createElement("a");
             newsUrlName.textContent = myNews.url
             newsDiv.appendChild(newsUrlName)
-            newsUrlName.setAttribute("href", "url")
+            newsUrlName.href = myNews.url
             const newsTime = document.createElement("h3");
             newsTime.textContent = myNews.time;
             newsDiv.appendChild(newsTime);
@@ -30,16 +28,6 @@ const newsDom = () => {
                 console.log(event);
                 deleteMe()
             })
-            // newsDiv.appendChild(newSynopisi);
-            // newsDiv.appendChild(newsUrlName);
-            // newsDiv.appendChild(deleteButton);
-            // const title = document.createTextNode(`${myNews.title}`);
-            // const synopsis = document.createTextNode(`${myNews.synopsis}`);
-            // const urlName = document.createTextNode(`${myNews.url}`);
-            // newsTitle.appendChild(title);
-            // newSynopisi.appendChild(synopsis);
-            // newsUrlName.appendChild(urlName);
-            // console.log("news", news);
             frag.appendChild(newsDiv);
             document.getElementById("container_news").appendChild(frag);
             function deleteMe() {
@@ -49,13 +37,7 @@ const newsDom = () => {
         })
     });
 }
-//  deleteMe: () => {
-//         deleteButton.textContent = "DELETE"
-//         deleteButton.setAttribute("class", "btn_delete");
-//         deleteButton.addEventListener("click", myNews => {
-//             API.deleteCall("news", myNews.id)
-//                 .then(newsDom(root.removeChild(newsDiv)))
-//         })
+
 
 
 export default newsDom
