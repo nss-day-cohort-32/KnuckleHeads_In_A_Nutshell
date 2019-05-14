@@ -11,6 +11,12 @@
       "email": "jake",
       "password": "jake",
       "id": 2
+    },
+    {
+      "username": "joey",
+      "email": "joey",
+      "password": "joey",
+      "id": 3
     }
   ],
   "friends": [
@@ -106,32 +112,35 @@
   ],
   "events": [
     {
+      "title": "event 1",
+      "date": "2019-05-13",
+      "summary": "location",
       "id": 7
     },
     {
-      "title": "ads",
+      "title": "event 2",
       "date": "2019-05-16",
-      "summary": "dsaads",
+      "summary": "location",
       "id": 8
     },
     {
-      "title": "jake",
-      "date": "2019-04-30",
-      "summary": "jake",
+      "title": "event 3",
+      "date": "2019-05-15",
+      "summary": "this is a 3rd event",
       "id": 9
     }
   ],
   "news": [
     {
-      "title": "amsdaslnk",
-      "synopsis": "lknaskljndaskljn",
-      "url": "klnasdklncalkndfsa",
+      "title": "News article 1",
+      "synopsis": "News Synopsis ",
+      "url": "www.url.com",
       "id": 1
     },
     {
-      "title": "titties",
-      "synopsis": "tities",
-      "url": "baale",
+      "title": "News article 2",
+      "synopsis": "News Synopsis",
+      "url": "www.url.com",
       "id": 2
     }
   ]

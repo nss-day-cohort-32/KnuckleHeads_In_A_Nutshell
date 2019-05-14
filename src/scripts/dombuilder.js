@@ -6,14 +6,25 @@ function domBuilder(resource) {
         clearBefore.removeChild(clearBefore.firstChild)
     }
     API.getCall(`${resource}`)
-        .then(events => events.map(domPrinter))
-}
+        .then(events => {
+            const lastEvent = events.length -1
+            console.log("last", lastEvent)
+            events.map(domPrinter)
+            document.querySelector("div")
+            const lastEventStyle = document.getElementById(`event_div_${lastEvent}`)
+            console.log(lastEventStyle)
+            lastEventStyle.style.fontWeight="900"
+            lastEventStyle.style.fontSize="45px"
+            lastEventStyle.style.backgroundColor="brown"
+        })
 
-function domPrinter(eventData) {
+
+function domPrinter(eventData, index) {
 
     const docFrag = document.createDocumentFragment()
 
     const div = document.createElement("div");
+    div.setAttribute("id", `event_div_${index}`)
 
     const title = document.createElement("h2");
     const date = document.createElement("h2");
@@ -29,6 +40,9 @@ function domPrinter(eventData) {
     const inputEventSummary = document.createElement("textarea");
     const inputEventDate = document.createElement("input");
     inputEventDate.setAttribute("type", "date");
+
+// console.log("last", lastEvent)
+    // lastEvent =events[events.length -1]
 
 
     deleteBtn.setAttribute("class", "btn_delete")
@@ -102,9 +116,6 @@ function domPrinter(eventData) {
 
     })
     saveEditBtn.addEventListener("click", event => {
-        // const valueInputTitle = inputEventTitle.value
-        // const valueInputSummary = inputEventSummary.value
-        // const valueInputDate = inputEventDate.value
         console.log(typeof valueInputSummary);
         const editedData = {
             title: inputEventTitle.value,
@@ -128,5 +139,10 @@ function domPrinter(eventData) {
     //     }
     // }
 }
+}
+
+// function recentEventIndicator(event){
+//     console.log(event)
+// }
 
 export default domBuilder
