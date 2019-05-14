@@ -1,5 +1,6 @@
-.div
-
+*{
+  box-sizing: border-box;
+}
 /* Navbar container */
 .navbar,
 .addbar {
@@ -247,8 +248,9 @@
   bottom: 0px;
   height: 180px;
   background: rgb(44, 45, 60);
-  padding: 15px;
-  width: 100%
+  padding: 0px;
+  width: 100%;
+  
 }
 
 #wrapper_social{
@@ -258,7 +260,7 @@
 
 #container_message_received{
   height:100px;
-  width:90%;
+  width:100%;
   overflow:auto;
   border:5px solid #EAF5FA;
   padding:2%;
@@ -279,10 +281,6 @@
   color: #0028F8;
 }
 
-#container_message_send{
-  box-sizing: border-box;
-}
-
 #wrapper_social{
   display: flex;
   flex-direction: column;
@@ -290,3 +288,4 @@
   margin: 5px;
 
 }
+
