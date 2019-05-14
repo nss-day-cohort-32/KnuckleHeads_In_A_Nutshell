@@ -8,12 +8,16 @@ import addNews from "./newsPostCall"
 import addEvent from "./eventPost"
 import getMessage from "./domMessage"
 import sendMessage from "./sendMessage"
-
+import runTasks from "./tasksDOM"
 // ============== Check for User First =========================
 checkforUser()
 newsDom()
 domBuilder("events")
 getMessage()
+runTasks.createTasks()
+runTasks.editTasks()
+runTasks.getTasks()
+
 //============== overlay btn open/close ===========================
 document.querySelector("#btn_close_welcome").addEventListener("click", event => {
     document.getElementById("overlay_welcome").style.display = "none"

@@ -1,13 +1,16 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 /* Navbar container */
 .navbar,
-.addbar {
+.addbar,
+#nuts {
   overflow: hidden;
   background-color: rgb(44, 45, 60);
   font-family: Arial;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+
 }
 
 /* The dropdown container */
@@ -53,6 +56,7 @@
 .addbar a:hover,
 .dropdown2:hover .dropbtn2 {
   background-color: rgb(66, 88, 96);
+
 }
 
 /* Dropdown content (hidden by default) */
@@ -110,6 +114,8 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(44, 45, 60);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* ============== Weclome, Sign-UP, Sign-In wrapper Overlay =============================== */
@@ -118,7 +124,7 @@
 #wrapper_signup,
 #wrapper_signin,
 #wrapper_event_form,
-#wrapper_news_form{
+#wrapper_news_form {
   max-width: 350px;
   margin: auto;
   padding: 20px;
@@ -130,7 +136,7 @@
 #container_signup,
 #container_signin,
 #conatiner_event_form,
-#container_news_form{
+#container_news_form {
   margin: 20px 0px
 }
 
@@ -138,7 +144,7 @@
 #wrapper_signup h2,
 #wrapper_signin h2,
 #wrapper_event_form h2,
-#wapper_news_form h2{
+#wapper_news_form h2 {
   margin: 0;
   padding: 0;
   font-size: 2em;
@@ -149,7 +155,7 @@
 #overlay_signup,
 #overlay_signin,
 #overlay_event,
-#overlay_news{
+#overlay_news {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -162,15 +168,15 @@
 #overlay_signup,
 #overlay_signin,
 #overlay_event,
-#overlay_news{
+#overlay_news {
   display: none;
 }
 
 #btn_close_signup,
 #btn_close_welcome,
 #btn_close_signin,
-#btn_close_event_form, 
-#btn_close_news_form{
+#btn_close_event_form,
+#btn_close_news_form {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -183,7 +189,7 @@
 #container_event_form input,
 #container_event_form textarea,
 #container_news_form input,
-#container_news_form textarea{
+#container_news_form textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -289,3 +295,105 @@
 
 }
 
+
+#wrapper_public {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+
+}
+
+#event_div_0,
+#event_div_1,
+#event_div_2,
+#event_div_3,
+#event_div_4,
+#event_div_5,
+.n-div {
+  border: 2px solid coral;
+  margin-top: 10px;
+}
+
+
+#container_events {
+  padding: 30px;
+  border: 2px double teal;
+}
+
+.n #container_news,
+#container_events,
+.n-div {
+  background-color: rgb(44, 45, 60);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.n-div {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(44, 45, 60);
+  border: 2px solid coral;
+  margin-top: 10px;
+}
+
+.event-title,
+.event-summary,
+.event-date,
+.news_title,
+.news_syn,
+.news_time,
+.news_url {
+  text-align: center;
+  color: rgb(249, 255, 217);
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: row;
+  width: 222px;
+  align-content: center;
+}
+
+.btn_delete,
+.btn_edit,
+.btn_save_edits,
+button {
+  border: 1.5px coral solid;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: row;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #c0ffee;
+  background-color: teal;
+}
+
+.btn_edit {
+  padding-right: 22px;
+}
+
+body {
+  padding-bottom: 175px;
+  background-image: url(img/1.jpg)
+}
+
+#nuts {
+  text-align: center;
+  color: cornsilk;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
+
+}
