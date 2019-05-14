@@ -6,7 +6,10 @@ function domBuilder(resource) {
         clearBefore.removeChild(clearBefore.firstChild)
     }
     API.getCall(`${resource}`)
-        .then(events => events.map(domPrinter))
+        .then(events => {
+            events.map(domPrinter)
+            events.map()
+        })
 }
 
 function domPrinter(eventData) {

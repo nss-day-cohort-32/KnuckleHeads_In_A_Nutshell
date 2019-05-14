@@ -11,6 +11,12 @@
       "email": "jake",
       "password": "jake",
       "id": 2
+    },
+    {
+      "username": "dude",
+      "email": "dude",
+      "password": "dude",
+      "id": 3
     }
   ],
   "friends": [
@@ -106,33 +112,18 @@
   ],
   "events": [
     {
-      "id": 7
-    },
-    {
-      "title": "ads",
+      "title": "dude",
       "date": "2019-05-16",
-      "summary": "dsaads",
-      "id": 8
-    },
-    {
-      "title": "jake",
-      "date": "2019-04-30",
-      "summary": "jake",
-      "id": 9
+      "summary": "dude",
+      "id": 1
     }
   ],
   "news": [
     {
-      "title": "amsdaslnk",
-      "synopsis": "lknaskljndaskljn",
-      "url": "klnasdklncalkndfsa",
+      "title": "yess",
+      "synopsis": "yess",
+      "url": "yesss",
       "id": 1
-    },
-    {
-      "title": "titties",
-      "synopsis": "tities",
-      "url": "baale",
-      "id": 2
     }
   ]
 }
